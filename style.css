@@ -1,0 +1,129 @@
+/* ---------- Page ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 0;
+  background-image: url("images/background.png");
+  font-family: "Century Gothic", "Poppins", "Trebuchet MS", sans-serif;
+}
+
+/* White "page" box centred on the patterned background */
+#container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 8px 6px;
+  background-color: white;
+}
+
+/* clear the floats so the white box wraps around everything */
+#container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---------- Header ---------- */
+#header {
+  background-color: #a8eeec;
+  padding: 6px 4px 4px 4px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+  color: #29aaa6;
+}
+
+#tagline {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: #29aaa6;
+}
+
+/* ---------- Friends sidebar ---------- */
+#friends {
+  float: left;
+  width: 145px;
+  padding: 6px 8px 8px 8px;
+  margin-bottom: 8px;
+  background-color: #40e0d0;
+  border: 5px solid #008b8b;
+}
+
+#friends h2 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  font-weight: 300;
+  color: #138c8e;
+}
+
+#friends ul {
+  margin: 0;
+  padding-left: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#friends a {
+  color: #f8b4c0;
+  text-decoration: none;
+}
+
+#friends li.online a {
+  color: white;
+  font-weight: bold;
+}
+
+/* ---------- Journal entries ---------- */
+#entries {
+  float: right;
+  width: 432px;
+}
+
+.entry {
+  margin-bottom: 8px;
+  padding: 6px 8px 8px 8px;
+  background-color: #e5f8f7;
+  border: 4px solid #b8e8e8;
+}
+
+/* clear the floated picture inside each entry */
+.entry::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.entry h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #2bb5aa;
+}
+
+/* the dashed blue line under each date */
+.date {
+  border-bottom: 2px dashed blue;
+}
+
+.entry p {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: justify;
+  color: #c4909f;
+}
+
+.entry-img {
+  float: right;
+  margin: 0 0 4px 8px;
+}
